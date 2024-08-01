@@ -6,6 +6,8 @@
   --bg: #87ceeb;
   --feat: #fff;
   --box: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  --fw-lg: 300;
+  --fw-bo: 400;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
 }
 
 .container {
+  border-top: 1px solid var(--second);
   font-family: 'League Spartan', sans-serif;
   background-color: var(--bg);
 }
@@ -21,7 +24,7 @@ h1,
 h2,
 h3 {
   color: var(--second);
-  font-weight: 300;
+  font-weight: var(--fw-lg);
   text-align: center;
 }
 
@@ -30,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 h3 {
@@ -63,11 +66,12 @@ p {
   margin: 100px 0;
   border-radius: 5px;
   box-shadow: var(--box);
+  border: 1px solid var(--second);
 }
 
 .quote {
   font-size: 27px;
-  font-weight: 400;
+  font-weight: var(--fw-bo);
 }
 
 .author {
